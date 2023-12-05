@@ -3,6 +3,8 @@
 import os
 import sys
 
+# admin: 1234@qwe
+
 
 def main():
     """Run administrative tasks."""
