@@ -1,0 +1,21 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Flatpages {% endblock title %}</title>
+</head>
+
+<body>
+    <a href="/about">About</a>
+    <a href="/contacts">Contacts</a>
+    <a href="/1">Page 1</a>
+    <a href="/2">Page 2</a>
+    <a href="/3">Page 3</a>
+    <hr>
+
+    {% block content %}
+    {% endblock content %}
+</body>
+
+</html>

@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('/', ur.view.here),
+    # path('/', ur.view.here),
     path('admin/', admin.site.urls),
     path('pages/', include("django.contrib.flatpages.urls")),
     # Скорее всего, лишние пути:

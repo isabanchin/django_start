@@ -130,6 +130,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-# Отключение кеширования (ХЗ надо ли):
-CACHES = {'default': {'BACKEND': 'django.core.cache.backends.dummy.DummyCache', }}
+STATICFILES_DIRS = [
+    BASE_DIR / "static"
+]
