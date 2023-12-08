@@ -40,20 +40,28 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='{% static "../about/" %}'>About</a>
+                        <a class="nav-link" href="{% static '../about/' %}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='{% static "../contacts/" %}'>Contact</a>
+                        <a class="nav-link" href="{% static '../contacts/' %}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='{% static "../1/" %}'>Page 1</a>
+                        <a class="nav-link" href="{% static '../1/' %}">Page 1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='{% static "../2/" %}'>Page 2</a>
+                        <a class="nav-link" href="{% static '../2/' %}">Page 2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='{% static "../3/" %}'>Page 3</a>
+                        <a class="nav-link" href="{% static '../3/' %}">Page 3</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% static '../4/' %}">Page 4</a>
+                    </li>
+                    {% if request.user.is_authenticated and request.user.is_staff %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% static '../5/' %}">Admin</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
